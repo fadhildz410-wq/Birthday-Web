@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Aya</title>
+     <link rel="icon" type="image/png" href="img/cake.png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Fredoka+One&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!--================================ LOGIN PAGE ============================-->
+    <div class="login-page" id="login-page">
+
+        <div class="login-wrapper">
+            <div class="stars-container" aria-hidden="true"></div>
+            <h2 class="wrapper-title">HAPPY <br/>BIRTHDAY</h2>
+            <h2 class="wrapper-sub">Aya!</h2>
+            <div class="wrapper-image">
+                <img class="wrapper-img" src="img/aya-1.jpeg" alt="Aya's Photo">
+                <img class="wrapper-img-2" src="img/aya-7.jpeg" alt="Aya's Photo">
+            </div>
+
+        </div>
+        <div class="login-contain">
+
+            <h2 class="login-title">Welcome</h2>
+            <div class="login-grid">
+                <input type="text" id="username" placeholder="Masukkan Username" autocomplete="off">
+                <input type="password" id="code-unik" placeholder="Masukkan Kode" autocomplete="off">
+                <p class="login-error" id="login-error"></p>
+                <button id="login-btn">Masuk</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============================== NAVBAR ================================ -->
+    <nav id="navbar" class="navbar-hidden">
+        <ul>
+            <li><a href="#" id="home-btn">Home</a></li>
+            <li><a href="#" id="logout-popup-btn">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- =============================== HOME ================================ -->
+    <section class="page-1 page-hidden" id="page-1">
+        <div class="stars-container" aria-hidden="true"></div>
+        <main class="page-wrapper">
+            <h1 class="title-happy-birthday fade-in">
+                <span class="line-happy">HAPPY</span>
+                <span class="line-birthday">BIRTHDAY <em> Aya!</em></span>
+            </h1>
+
+            <div class="polaroid-container">
+                <div class="polaroid-left">
+                    <img class="polaroid-img-left" src="img/aya-1.jpeg" alt="Aya's Photo">
+                </div>
+                <div class="polaroid-right">
+                    <img class="polaroid-img-right" src="img/aya-2.jpeg" alt="Aya's Photo">
+                </div>
+            </div>
+
+            <div class="btn" id="view-gifts-btn">
+                <a href="#page-2">View Gifts</a>
+            </div>
+        </main>
+    </section>
+
+    <!-- =============================== SURAT ================================ -->
+    <section class="page-2" id="page-2">
+        <div class="stars-container" aria-hidden="true"></div>
+        <div class="page2-wrapper">
+
+            <div class="letter-card-title fade-in">
+                <span class="line-special">This Special Letter</span>
+                <span class="line-divider"><span class="divider-line"></span><span class="divider-heart">♥</span><span class="divider-line"></span></span>
+                <span class="line-you">for You</span>
+                <span class="line-mutiara">Mutiara Tsani Oktaviany</span>
+            </div>
+            <div class="letter-card-wrap fade-in">
+                <div class="letter-card">
+                    <div class="letter-card-flap"></div>
+                    <div class="letter-card-stamp">
+                        <span class="stamp-inner">
+                            <span class="stamp-heart">♥</span>
+                            <span class="stamp-text">AYA<br/></span>
+                        </span>
+                    </div>
+
+                <button class="btn-baca" id="baca-btn">OPEN</button>
+                </div>
+            </div>
+        </div>
+        <div class="btn-page-latter">
+            <div class="btn-before-container">
+                <button class="btn-before" id="before-btn-1">Before</button>
+            </div>
+            <div class="btn-next-container">
+                <button class="btn-next" id="next-btn-1">Next</button>
+            </div>
+        </div>
+       
+    </section>
+
+    <!-- AUDIO BACKGROUND -->
+    <audio id="bg-music" src="Audio/monokrom.mpeg.wav" preload="auto" loop></audio>
+
+    <!-- BALLOON CONTAINER -->
+    <div class="balloon-container" id="balloon-container" aria-hidden="true"></div>
+
+    <!-- MODAL SURAT -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close">×</button>
+            <h2 class="modal-title">To, Aya</h2>
+            <div class="modal-body">
+                <p>Selamat Ulang Tahun Ayaa, terimakasih sudah menjadi seseorang yang buat aku percaya .</p>
+                <p>Terima kasih sudah jadi teman yang baik selama ini. Semoga semua impian dan harapanmu tahun ini bisa tercapai satu per satu.</p>
+                <p>Sehat selalu, bahagia selalu, dan jangan lupa makan yang banyak ya! 🎂</p>
+                <p class="modal-signature">— Dengan sayang,</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============================== IMAGE MEMORIES ================================ -->
+    <section class="page-3" id="page-3">
+        <div class="stars-container" aria-hidden="true"></div>
+        <div class="page-3-title fade-in">
+            <h1 class="title-page-3">Our Memories</h1>
+        </div>
+        <div class="page-3-wrapper">
+            <ul class="page-3-contain">
+                <li class="page-3-list fade-in" style="--delay: 0s"><div class="page-3-grid"><img class="page3-img" src="img/aya-7.jpeg" alt="Aya's Photo"></div></li>
+                <li class="page-3-list fade-in" style="--delay: 0.1s"><div class="page-3-grid-1"><img class="page3-img" src="img/aya-1.jpeg" alt="Aya's Photo"></div></li>
+                <li class="page-3-list fade-in" style="--delay: 0.2s"><div class="page-3-grid"><img class="page3-img" src="img/1783399574550.jpg" alt="Aya's Photo"></div></li>
+                <li class="page-3-list fade-in" style="--delay: 0.3s"><div class="page-3-grid-1"><img class="page3-img" src="img/aya-5.jpeg" alt="Aya's Photo"></div></li>
+                <li class="page-3-list fade-in" style="--delay: 0.4s"><div class="page-3-grid"><img class="page3-img" src="img/1783399748748.jpg" alt="Aya's Photo"></div></li>
+                <li class="page-3-list fade-in" style="--delay: 0.5s"><div class="page-3-grid-1"><img class="page3-img" src="img/1783399781853.jpg" alt="Aya's Photo"></div></li>
+                <li class="page-3-list fade-in" style="--delay: 0.6s"><div class="page-3-grid"><img class="page3-img" src="img/1783399762864.jpg" alt="Aya's Photo"></div></li>
+                <li class="page-3-list fade-in" style="--delay: 0.7s"><div class="page-3-grid-1"><img class="page3-img" src="img/aya-8.jpg" alt="Aya's Photo"></div></li>
+            </ul>
+        </div>
+
+        <section class="page-timeline timeline-section page-hidden" id="page-timeline">
+        <div class="stars-container" aria-hidden="true"></div>
+        <div class="timeline-line"></div>
+
+        <!-- ============ 1. Hari Pertama Kenal ============ -->
+        <div class="timeline-item">
+            <div class="tl-card reveal">
+                <div class="card">
+                    <span class="card-eyebrow">Awal Cerita</span>
+                    <h2 class="card-title">🌱 Hari Pertama Kenal</h2>
+                    <p class="card-text">Hari dimana aku ga pernah nyangka
+                        bahwa kamu bakal jadi seseorang yang spesial di hidup aku.</p>
+                </div>
+            </div>
+            <div class="tl-marker reveal">🌱</div>
+            <div class="tl-spacer"></div>
+        </div>
+
+        <!-- ============ 2. First Conversation ============ -->
+        <div class="timeline-item">
+            <div class="tl-card reveal">
+                <div class="card">
+                    <span class="card-eyebrow">Percakapan Pertama</span>
+                    <h2 class="card-title">☕ First Conversation</h2>
+                    <p class="card-text">Percakapan sederhana yang ternyata menjadi awal dari banyak cerita.</p>
+                </div>
+            </div>
+            <div class="tl-marker reveal">☕</div>
+            <div class="tl-spacer"></div>
+        </div>
+
+        <!-- ============ 3. First Photo Together ============ -->
+        <div class="timeline-item">
+            <div class="tl-card reveal">
+                <div class="card">
+                    <span class="card-eyebrow">Momen Terekam</span>
+                    <h2 class="card-title">📸 First Photo Together</h2>
+                    <div class="card-photo-frame">
+                        <!--
+                            GANTI SRC INI dengan foto asli kalian.
+                            Contoh untuk foto lokal: src="img/first-photo.jpg"
+                            Sekarang masih pakai placeholder dari Unsplash.
+                        -->
+                        <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=800&q=80" alt="Foto pertama bareng">
+                    </div>
+                    <p class="card-photo-caption">Foto pertama kita, disimpan baik-baik.</p>
+                    <!-- GANTI teks cerita di bawah ini sesuai momen aslinya -->
+                    <p class="card-text">Foto random yang diambil asal-asalan, tapi entah kenapa jadi salah satu yang paling sering aku lihat ulang.</p>
+                </div>
+            </div>
+            <div class="tl-marker reveal">📸</div>
+            <div class="tl-spacer"></div>
+        </div>
+
+        <!-- ============ 4. The Moment I Realized... ============ -->
+        <div class="timeline-item">
+            <div class="tl-card reveal">
+                <div class="card card-long">
+                    <span class="card-eyebrow">Titik Balik</span>
+                    <h2 class="card-title">❤️ The Moment I Realized...</h2>
+                    <!--
+                        GANTI paragraf di bawah ini dengan cerita panjang kamu sendiri.
+                        Boleh ditambah <p> baru kalau ceritanya lebih dari satu paragraf.
+                    -->
+                    <p class="card-text">
+                        Tulis di sini momen paling berkesan itu — kapan, di mana, dan apa yang membuat kamu akhirnya sadar
+                        bahwa orang ini berbeda dari yang lain. Ceritakan detail kecil yang masih kamu ingat sampai sekarang,
+                        supaya siapa pun yang membaca ini bisa ikut merasakan momennya.
+                    </p>
+                </div>
+            </div>
+            <div class="tl-marker reveal">❤️</div>
+            <div class="tl-spacer"></div>
+        </div>
+
+        <!-- ============ 5. Today — Ulang Tahun ============ -->
+        <div class="timeline-item is-today">
+            <div class="tl-card reveal">
+                <div class="card card-today">
+                    <span class="card-eyebrow">Hari Ini</span>
+                    <!-- GANTI tanggal di judul ini kalau perlu -->
+                    <h2 class="card-title">🎂 Today — 15 October 2026</h2>
+                    <p class="card-text">Dan akhirnya sampai di hari ulang tahunmu.</p>
+                    <button class="btn-celebrate" id="celebrate-btn">Rayakan 🎉</button>
+                </div>
+            </div>
+            <div class="tl-marker reveal">🎂</div>
+            <div class="tl-spacer"></div>
+        </div>
+    </section>
+    <div class="btn-page-latter">
+            <div class="btn-before-container">
+                <button class="btn-before" id="before-btn-2">Before</button>
+            </div>
+            <div class="btn-next-container">
+                <button class="btn-next" id="next-btn-2">Next</button>
+            </div>
+        </div>
+
+    </section>
+
+   
+    <div class="confetti-container" id="confetti-container" aria-hidden="true"></div>
+
+    <!--================================= PAGE VIDEO ============================= -->
+    <section class="page-4" id="page-4">
+        <div class="stars-container" aria-hidden="true"></div>
+        <div class="page-4-contain fade-in">
+            <h1 class="title-page-4">Special Video</h1>
+            <button class="video-btn" id="video-btn"> Play Video </button>
+        </div>
+    </section>
+
+    <!-- POPUP VIDEO -->
+    <div class="page-video" id="page-video">
+        <div class="video-box">
+            <button class="video-close" id="video-close">×</button>
+            <h2 class="video-title">To, Aya</h2>
+            <video class="video-contain" id="video-player" controls playsinline preload="metadata" poster="img/aya-1.jpeg">
+                <source src="video/lv_7372477937125199120_20241015052702.mp4" type="video/mp4">
+                Browser kamu tidak mendukung tag video HTML5.
+            </video>
+        </div>
+    </div>
+
+    
+
+  
+    <div class="pop-up-logout" id="page-logout-popup">
+        <div class="logout-box"> 
+            <p class="logout-text">Beneran nih mau logout? udah liat semuanya belum?</p>
+            <button class="logout-popup-btn" id="logout-btn">Logout</button>
+            <button class="logout-close" id="logout-close">×</button>
+         </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

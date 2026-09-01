@@ -1,0 +1,17 @@
+.env
+venv/
+.venv/
+__pycache__/
+node_modules/
+*.mp4 
+*.jpg
+*.jpeg
+*.png
+*.webp     
+# File media besar
+frontend/video/
+frontend/Audio/
+*.mp4
+*.wav
+*.mpeg
+*.mp3                       
