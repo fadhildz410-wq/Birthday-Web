@@ -575,14 +575,19 @@ body.with-navbar { padding-top: 52px; }
 .btn-baca:active { transform: scale(0.97); }
 
 
-.btn-page-latter{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 55rem;
-}
-.btn-next-container {
+.btn-page-latter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
     position: relative;
-    bottom: 2rem;
+    z-index: 1500;
+}
+.btn-next-container,
+.btn-before-container {
+    position: relative;
     z-index: 1500;
 }
 .btn-next{
@@ -604,12 +609,7 @@ body.with-navbar { padding-top: 52px; }
 .btn-next:hover { background-color: #f5adb6; transform: translateY(-2px); }
 .btn-next:active { transform: scale(0.97); }
 
-.btn-before-container {
-    position: relative;
-    bottom: 0.5rem;
-    
-    z-index: 1500;
-}
+
 
 .btn-before {
     background-color: #F9C8CD;
@@ -1176,6 +1176,21 @@ body.with-navbar { padding-top: 52px; }
 }
 
 @media (max-width: 900px) {
+    .login-page {
+        grid-template-columns: 1fr; /* jadi 1 kolom, otomatis stack sesuai urutan HTML */
+    }
+    .login-wrapper {
+        padding: 2.5rem 1.5rem 1rem;
+        align-items: center;
+        text-align: center;
+    }
+    .wrapper-title,
+    .wrapper-sub {
+        text-align: center;
+    }
+    .login-contain {
+        padding: 1rem 1.5rem 3rem;
+    }
     .page2-wrapper {
         display: flex;
         flex-direction: column;
@@ -1246,4 +1261,29 @@ body.with-navbar { padding-top: 52px; }
     }
     .stamp-heart { font-size: 0.8rem; }
     .stamp-text { font-size: 0.4rem; }
+    .wrapper-title { font-size: clamp(2rem, 9vw, 2.8rem); }
+    .wrapper-sub { font-size: 2.5rem; }
+    .polaroid-container {
+        width: 100%;
+        max-width: 300px;
+        height: 175px;
+    }
+    .polaroid-left, .polaroid-right {
+        width: 115px;
+        padding: 6px 6px 22px 6px;
+    }
+    .polaroid-left { left: 10px; }
+    .polaroid-right { right: 10px; top: -10px; }
+    .polaroid-img-left,
+    .polaroid-img-right {
+        width: 100px;
+    }
+    .btn-page-latter { padding: 0 1rem; }
+    .btn-before, .btn-next {
+        padding: 0.55rem 1.6rem;
+        font-size: 0.85rem;
+    }
+    .page-3-contain{
+         grid-template-columns: 1fr; 
+    }
 }
