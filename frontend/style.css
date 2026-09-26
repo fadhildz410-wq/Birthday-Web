@@ -233,6 +233,10 @@ nav ul li a {
                 linear-gradient(160deg, #2b1c2e 0%, #1c1320 45%, #0a0710 100%);
     overflow: hidden;
 }
+.page-2 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
 .page-wrapper {
     position: relative;
     z-index: 1;
@@ -630,15 +634,14 @@ body.with-navbar { padding-top: 52px; }
 .btn-before:active { transform: scale(0.97); }
 
 
-
 @media (max-width: 480px) {
-    .btn-before-container {
-        bottom: 1.2rem;
-        left: 1.2rem;
-    }
     .btn-before {
         padding: 0.55rem 1.8rem;
         font-size: 0.85rem;
+    }
+    .btn-before-vd {
+        bottom: 1.2rem;
+        left: 1.2rem;
     }
 }
 
@@ -993,10 +996,10 @@ body.with-navbar { padding-top: 52px; }
 .btn-next-2:active { transform: scale(0.97); }
 .btn-next-container {
     position: relative;
-    bottom: 2rem;
+    
     z-index: 1500;
     text-align: center;
-    margin-top: 1.5rem;
+   
 }
 
 /* =============================== PAGE 4 (VIDEO) ================================ */
@@ -1008,7 +1011,11 @@ body.with-navbar { padding-top: 52px; }
     align-items: center;
     justify-content: center;
 }
-.page-4-contain { position: relative; z-index: 1; text-align: center; }
+.page-4-contain { 
+    position: relative; 
+    z-index: 1; 
+    text-align: center;
+ }
 .title-page-4 {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
@@ -1033,6 +1040,15 @@ body.with-navbar { padding-top: 52px; }
 }
 .video-btn:hover { background-color: #f5adb6; }
 .video-btn:active { transform: scale(0.97); }
+
+.btn-before-vd {
+    position: absolute;
+    bottom: 2rem;
+    left: 1.5rem;
+    z-index: 1500;
+}
+
+
 
 /* =============================== POPUP VIDEO ================================ */
 .page-video {

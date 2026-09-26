@@ -40,6 +40,7 @@ const nextBtn1     = document.getElementById('next-btn-1');
 const nextBtn2     = document.getElementById('next-btn-2');
 const beforeBtn1   = document.getElementById('before-btn-1');
 const beforeBtn2   = document.getElementById('before-btn-2');
+const beforeBtn3   = document.getElementById('before-btn-3');
 
 const bacaBtn      = document.getElementById('baca-btn');
 const modalOverlay = document.getElementById('modal-overlay');
@@ -229,6 +230,22 @@ beforeBtn2.addEventListener('click', function (e) {
     e.preventDefault();
     showBeforePage2();
 });
+function showBeforePage3() {
+    page1.classList.add('page-hidden');
+    page2.classList.add('page-hidden');
+    page3.classList.add('page-active');
+    page3.classList.remove('page-hidden');
+    page4.classList.add('page-hidden');
+    pageTimeline.classList.add('page-hidden');
+    pageTimeline.classList.remove('page-active');
+    generateStars();
+    observeFadeIns();
+    observeReveals(); 
+}
+beforeBtn3.addEventListener('click', function (e) {
+    e.preventDefault();
+    showBeforePage3();
+});
 function showNextPage1() {
     page1.classList.add('page-hidden');
     page2.classList.add('page-hidden');
@@ -251,8 +268,6 @@ nextBtn1.addEventListener('click', function (e) {
     e.preventDefault();
     showNextPage1();
 });
-
-
 
 function showNextPage2() {
     page1.classList.add('page-hidden');
