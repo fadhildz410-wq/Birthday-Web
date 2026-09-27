@@ -892,7 +892,7 @@ body.with-navbar { padding-top: 52px; }
 .card:hover .card-photo-frame { transform: rotate(0deg); }
 .card-photo-frame img {
     width: 100%;
-    height: 220px;
+    height: 400px;
     object-fit: cover;
 }
 .card-photo-caption {
